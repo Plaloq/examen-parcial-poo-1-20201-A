@@ -21,7 +21,7 @@ public class MovieManager {
     public void addMovie(Movie name){
         movies.add(name);
     }
-    public Review findMovie(String name){
+    public boolean findMovie(String name){
         return();
     }
 

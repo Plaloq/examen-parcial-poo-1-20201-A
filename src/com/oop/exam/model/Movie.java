@@ -1,19 +1,20 @@
 package com.oop.exam.model;
 
 import java.util.ArrayList;
+
 public class Movie {
+    String[] actors = {};
     private ArrayList<Review> reviews;
     private String title;
     private int year;
     private String director;
-    private ArrayList<String> actors;
     private ArrayList<Platform> platforms;
     private String synopsis;
 
-    public Movie(String title){
+    public Movie(String title, int year, String director){
         setTitle(title);
         reviews = new ArrayList<>();
-        actors = new ArrayList<>();
+        String actors[] = new String[]{};
         platforms = new ArrayList<>();
         setYear(year);
         setDirector(director);
@@ -44,11 +45,11 @@ public class Movie {
         this.director = director;
     }
 
-    public ArrayList<String> getActors() {
+    public String[] getActors() {
         return actors;
     }
 
-    public void setActors(ArrayList<String> actors) {
+    public void setActors(String[] actors) {
         this.actors = actors;
     }
 
